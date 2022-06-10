@@ -1,9 +1,10 @@
 # Trabalho de Programação para Dispositivos Móveis
 
-O objetivo deste trabalho é a criação de um aplicativo de quizzes com login para o Sistema Android com o foco em testes e recursos (fragmentos, strings, cores, imagens, sons, notificações, menu, alarme, câmera, mapas).
+* O objetivo deste trabalho é a criação de um aplicativo de quizzes com login para o Sistema Android com o foco em testes e recursos (fragmentos, strings, cores, imagens, sons, notificações, menu, alarme, câmera, mapas).
 
 ## Usuários e seus papéis
-
+Possiveis Personas
+* f
 ## Requisitos Funcionais
 
 ## Alunos
