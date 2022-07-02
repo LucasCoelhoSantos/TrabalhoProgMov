@@ -57,7 +57,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                         if (validarExistencia == false){
                             Boolean Sucesso = myDB.insertData(email,senha);
-                            
+
                             if (Sucesso == true){
                                 Toast.makeText(RegisterActivity.this,"Registrado com sucesso!.",Toast.LENGTH_SHORT).show();
                             }
