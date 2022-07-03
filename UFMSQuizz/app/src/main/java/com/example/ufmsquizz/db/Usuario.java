@@ -3,10 +3,17 @@ package com.example.ufmsquizz.db;
 import java.io.Serializable;
 
 public class Usuario implements Serializable {
-    private String nome, email, senha, fotoPerfil;
-    //private Byte fotoPerfil;
+    private String nome, email, senha;
+    private byte fotoPerfil;
 
     public Usuario() {}
+
+    public Usuario(String nome, String email, String senha, byte fotoPerfil) {
+        this.nome = nome;
+        this.email = email;
+        this.senha = senha;
+        this.fotoPerfil = fotoPerfil;
+    }
 
     public String getNome() {
         return nome;
@@ -32,11 +39,11 @@ public class Usuario implements Serializable {
         this.senha = senha;
     }
 
-    public String getFotoPerfil() {
+    public byte getFotoPerfil() {
         return fotoPerfil;
     }
 
-    public void setFotoPerfil(String fotoPerfil) {
+    public void setFotoPerfil(byte fotoPerfil) {
         this.fotoPerfil = fotoPerfil;
     }
 

@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.database.sqlite.SQLiteStatement;
 
 import androidx.annotation.Nullable;
 
@@ -52,6 +53,7 @@ public class DBHelperUsuario extends SQLiteOpenHelper {
         values.put(COLUMN_NOME, u.getNome());
         values.put(COLUMN_EMAIL, u.getEmail());
         values.put(COLUMN_SENHA, u.getSenha());
+        values.put(COLUMN_FOTOPERFIL, u.getFotoPerfil());
         db.insert(TABLE_NAME, null, values);
         db.close();
     }
@@ -61,6 +63,7 @@ public class DBHelperUsuario extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put(COLUMN_NOME, u.getNome());
         values.put(COLUMN_EMAIL, u.getEmail());
+        values.put(COLUMN_FOTOPERFIL, u.getFotoPerfil());
         String[] args = {String.valueOf(u.getEmail())};
         db.update(TABLE_NAME, values,COLUMN_EMAIL + "=?", args);
         db.close();
@@ -79,7 +82,7 @@ public class DBHelperUsuario extends SQLiteOpenHelper {
         String[] columns = {COLUMN_NOME, COLUMN_EMAIL, COLUMN_SENHA};
 
         String[] args = {String.valueOf(email)};
-        Cursor cursor = getReadableDatabase().query(TABLE_NAME, columns, "email=?", args, null, null, "upper(nome)", null);
+        Cursor cursor = getReadableDatabase().query(TABLE_NAME, columns, COLUMN_EMAIL + "=?", args, null, null, "upper(nome)", null);
 
         Usuario u = new Usuario();
         u.setNome(cursor.getString(0));
@@ -93,8 +96,8 @@ public class DBHelperUsuario extends SQLiteOpenHelper {
         String[] columns = {COLUMN_NOME, COLUMN_EMAIL, COLUMN_SENHA};
 
         Cursor cursor = getReadableDatabase().query(TABLE_NAME, columns, null, null, null, null, "upper(nome)", null);
-
         ArrayList<Usuario> listaUsuario = new ArrayList<Usuario>();
+
         while(cursor.moveToNext()){
             Usuario u = new Usuario();
             u.setNome(cursor.getString(0));

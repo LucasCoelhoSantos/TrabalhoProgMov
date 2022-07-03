@@ -41,17 +41,14 @@ import java.io.IOException;
 import java.util.Calendar;
 
 public class PerfilActivity extends AppCompatActivity {
-    private ImageView image;
+    private ImageView fotoPerfil;
     private EditText edtNome, edtEmail;
     private Button btnSair, btnSalvar, btnExcluirConta;
     private FloatingActionButton btnCamera;
-    private Usuario usuario;
-    private String usuarioDel;
 
     private static final int PERMISSION_REQUEST_CODE = 200;
     static final int GALLERY = 1;
     static final int REQUEST_IMAGE_CAPTURE = 2;
-    byte foto[];
     private static final String IMAGE_DIRECTORY = "/UFMSQuizz";
 
     private DBHelperUsuario helperUsuario = new DBHelperUsuario(this);
@@ -60,7 +57,7 @@ public class PerfilActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfil);
-        image = findViewById(R.id.fotoPerfil);
+        fotoPerfil = findViewById(R.id.fotoPerfil);
         btnCamera = findViewById(R.id.btnCamera);
         btnSair = (Button)findViewById(R.id.btnSairConta);
         btnSalvar = (Button)findViewById(R.id.btnSalvarConta);
@@ -111,7 +108,7 @@ public class PerfilActivity extends AppCompatActivity {
             Toast.makeText(PerfilActivity.this,"Tem imagem",Toast.LENGTH_SHORT).show();
             byte[] imageBytes = Base64.decode(myDB.retornarFotoPerfil(emailUser), Base64.DEFAULT);
             Bitmap imagemDecodificada = BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.length);
-            image.setImageBitmap(imagemDecodificada);
+            fotoPerfil.setImageBitmap(imagemDecodificada);
         }
         else {
             Toast.makeText(PerfilActivity.this," Não Tem imagem",Toast.LENGTH_SHORT).show();
@@ -150,7 +147,7 @@ public class PerfilActivity extends AppCompatActivity {
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
             Bundle extras = data.getExtras();
             Bitmap bitmap = (Bitmap) extras.get("data");
-            image.setImageBitmap(resizeImage(bitmap, 300, 600));
+            fotoPerfil.setImageBitmap(resizeImage(bitmap, 300, 600));
             saveImage(bitmap);
             Toast.makeText(PerfilActivity.this, "Imagem Salva!", Toast.LENGTH_SHORT).show();
         }
@@ -158,7 +155,7 @@ public class PerfilActivity extends AppCompatActivity {
         if (requestCode==1) {
             try {
                 Bitmap fotoRegistrada = (Bitmap) dados.getExtras().get("data");
-                image.setImageBitmap(fotoRegistrada);
+                fotoPerfil.setImageBitmap(fotoRegistrada);
 
                 byte[] fotoEmBytes;
                 ByteArrayOutputStream streamDaFotoEmBytes = new ByteArrayOutputStream();
@@ -184,7 +181,7 @@ public class PerfilActivity extends AppCompatActivity {
     public String saveImage(Bitmap bitmap) {
         ByteArrayOutputStream bytes = new ByteArrayOutputStream(bitmap.getWidth() * bitmap.getHeight());
         bitmap.compress(Bitmap.CompressFormat.JPEG, 100, bytes);
-        foto = bytes.toByteArray();
+        //foto = bytes.toByteArray();
 
         File directory = new File(Environment.getExternalStorageDirectory() + IMAGE_DIRECTORY);
 
