@@ -14,16 +14,17 @@ import at.favre.lib.crypto.bcrypt.BCrypt;
 public class DBHelper extends SQLiteOpenHelper {
     // possível erro no context abaixo
     public DBHelper( Context context ) {
-        super(context,"Login.db",null,1);
+        super(context,"Login.db",null,3);
     }
 
     @Override
     public void onCreate(SQLiteDatabase myDB) {
-        myDB.execSQL("create table users(email Text primary key, senha Text)");
+        myDB.execSQL("create table users(email Text primary key, senha Text, fotoPerfil Text)");
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase myDB, int i, int i1) {
+    public void onUpgrade(SQLiteDatabase myDB, int i, int i1)
+    {
         myDB.execSQL("drop table if exists users");
 
     }
@@ -42,6 +43,7 @@ public class DBHelper extends SQLiteOpenHelper {
             return true;
         }
     }
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
     // Provavelmente tá com bug
@@ -57,6 +59,21 @@ public class DBHelper extends SQLiteOpenHelper {
         //long result = myDB.insert("users",fotoPerfil,contentValues);
          //if(result==-1){
 
+=======
+    // Provavelmente tá com bug
+    public Boolean salvarFoto( String fotoPerfil){
+        SQLiteDatabase myDB = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("fotoPerfil",fotoPerfil);
+
+        long result = myDB.insert("users",fotoPerfil,contentValues);
+        if(result==-1){
+            return false;
+        }
+        else{
+            return true;
+        }
+>>>>>>> c9291865de4f08f0cb5298347682666c88057547
     }
     //Provavelmente tá com bug
     public Boolean checarFoto(String email){
@@ -74,10 +91,15 @@ public class DBHelper extends SQLiteOpenHelper {
     public String retornarFotoPerfil(String email){
         SQLiteDatabase myDB = this.getWritableDatabase();
         String fotoNoBd = String.valueOf(myDB.rawQuery("select fotoPerfil from users where email = ?",new String[]{email}));
+<<<<<<< HEAD
 
         return fotoNoBd;
     }
 >>>>>>> Stashed changes
+=======
+        return fotoNoBd;
+    }
+>>>>>>> c9291865de4f08f0cb5298347682666c88057547
 
     public Boolean checkUser(String email){
         SQLiteDatabase myDB = this.getWritableDatabase();
@@ -93,8 +115,8 @@ public class DBHelper extends SQLiteOpenHelper {
     public Boolean checkUserPassword(String email, String senha){
         SQLiteDatabase myDB = this.getWritableDatabase();
 
-            Cursor cursor = myDB.rawQuery("select * from users where email = ? and senha=?", new String[]{email,senha });
-            if (cursor.getCount() > 0) {
+            Cursor cursor2 = myDB.rawQuery("select * from users where email = ? and senha=?", new String[]{email,senha });
+            if (cursor2.getCount() > 0) {
                 return true;
             } else {
                 return false;
