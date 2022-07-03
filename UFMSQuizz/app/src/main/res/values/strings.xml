@@ -11,9 +11,27 @@
     <string name="login_failed">"Login failed"</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-<<<<<<< Updated upstream
-=======
+
+    <!-- Tela de Login e Registro -->
+    <string name="login">Login:</string>
+    <string name="preencher_dados">Preencha com seus dados:</string>
+    <string name="campo_email">Email</string>
+    <string name="campo_senha">Senha</string>
+    <string name="campo_confirmar_senha">Confirmar senha</string>
+    <string name="botao_entrar">Entrar</string>
+    <string name="criar_conta">Ainda não tem uma conta?</string>
+    <string name="botao_registrar">Registrar</string>
+
+    <!-- Tela de Perfil -->
+    <string name="nome_usuario">Nome:</string>
+    <string name="email_usuario">Email:</string>
+    <string name="alterar_conta">Salvar</string>
+    <string name="sair_conta">Sair</string>
+    <string name="excluir_conta">Excluir conta</string>
+
+    <!-- Tela de Quizz -->
     <string name="title_activity_tela_quiz">TelaQuiz</string>
+
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
@@ -49,11 +67,10 @@
         <item>1,61 - 1,70</item>
         <item>1,71 - 1,80</item>
         <item>1,81+</item>
-
     </string-array>
+
     <string-array name="array_quiz2">
-        <item>Você desce do avião da SHIELD, em plena Times Square destruída. O vilão está a cinco
-            quarteirões de distância de você, e começa a te encarar, o que você faz?</item>
+        <item>Você desce do avião da SHIELD, em plena Times Square destruída. O vilão está a cinco quarteirões de distância de você, e começa a te encarar, o que você faz?</item>
         <item>Pega uma metralhadora e começa a atirar dali mesmo</item>
         <item>Encara ele e corre em direção ao combate</item>
         <item>Voa até lá para dar uma surra nele</item>
@@ -78,8 +95,6 @@
         <item>Explode</item>
         <item>Disfarça a raiva</item>
         <item>Se vinga mais tarde</item>
-
     </string-array>
 
->>>>>>> Stashed changes
 </resources>

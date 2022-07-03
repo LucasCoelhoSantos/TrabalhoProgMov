@@ -23,10 +23,11 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
         android:layout_marginTop="48dp"
         android:text="Parabéns você é o :"
-        app:layout_constraintTop_toBottomOf="@+id/imgVitoria"
-        tools:layout_editor_absoluteX="51dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgVitoria" />
 
     <TextView
         android:id="@+id/txtNomeFinal"

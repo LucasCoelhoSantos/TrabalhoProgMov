@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.res.Resources;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,36 +11,35 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-public class TelaQuiz extends AppCompatActivity {
+public class TelaQuizActivity extends AppCompatActivity {
     Button btnProximaQuestao;
     RadioGroup btnQuestao;
-    RadioButton btnQuestao1,btnQuestao2,btnQuestao3,btnQuestao4;
+    RadioButton btnQuestao1, btnQuestao2, btnQuestao3, btnQuestao4;
     TextView txtQuestao;
-    int i=5;
+    int i = 5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_quiz);
-        btnProximaQuestao = (Button)findViewById(R.id.btnProximaQuestao);
-        btnQuestao = (RadioGroup)findViewById(R.id.radioGroupQuestoes);
-        btnQuestao1 =(RadioButton)findViewById(R.id.btnQuestao1);
-        btnQuestao2 =(RadioButton)findViewById(R.id.btnQuestao2);
-        btnQuestao3 =(RadioButton)findViewById(R.id.btnQuestao3);
-        btnQuestao4 =(RadioButton)findViewById(R.id.btnQuestao4);
 
         txtQuestao = (TextView)findViewById(R.id.txtPergunta);
+        btnQuestao = (RadioGroup)findViewById(R.id.radioGroupQuestoes);
+        btnQuestao1 = (RadioButton)findViewById(R.id.btnQuestao1);
+        btnQuestao2 = (RadioButton)findViewById(R.id.btnQuestao2);
+        btnQuestao3 = (RadioButton)findViewById(R.id.btnQuestao3);
+        btnQuestao4 = (RadioButton)findViewById(R.id.btnQuestao4);
+        btnProximaQuestao = (Button)findViewById(R.id.btnProximaQuestao);
+
         Resources res = getResources();
-        int quizIntAux = quizHomeActivity.GetQuizInt();
+        int quizIntAux = QuizHomeActivity.GetQuizInt();
+
         String dados [];
-        if (quizIntAux ==1) {
-            dados=res.getStringArray(R.array.array_quiz1);
-        }else {
-            dados=res.getStringArray(R.array.array_quiz2);
-
+        if (quizIntAux == 1) {
+            dados = res.getStringArray(R.array.array_quiz1);
+        } else {
+            dados = res.getStringArray(R.array.array_quiz2);
         }
-
-
 
         txtQuestao.setText(dados[0]);
         btnQuestao1.setText(dados[1]);
@@ -52,19 +50,15 @@ public class TelaQuiz extends AppCompatActivity {
         btnProximaQuestao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                    alterarDados(dados);
+                alterarDados(dados);
             }
-        }
-
-        );
-
+        });
     }
 
     public int alterarDados(String dados[]){
-        //Tem que colocar um and radio button is checked
-        if(i ==20){
-            Intent intent = new Intent(getApplicationContext(),TelaVitoriaActivity.class);
+        // Tem que colocar um and radio button is checked
+        if (i == 20) {
+            Intent intent = new Intent(getApplicationContext(), TelaVitoriaActivity.class);
             startActivity(intent);
         }
         txtQuestao.setText(dados[i]);
@@ -79,6 +73,4 @@ public class TelaQuiz extends AppCompatActivity {
         i+=1;
         return i;
     }
-
-
 }
