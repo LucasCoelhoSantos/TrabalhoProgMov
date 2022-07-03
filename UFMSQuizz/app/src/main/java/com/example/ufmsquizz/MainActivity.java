@@ -18,6 +18,11 @@ public class MainActivity extends AppCompatActivity {
     EditText email,senha;
     Button btnRegistrar,btnLogar;
     DBHelper myDB;
+    private static String emailUser;
+    public static String getEmailUser() {
+        return emailUser;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
                     Boolean validarCredenciais = myDB.checkUserPassword(emailAux,senhaAux);
 
                     if (validarCredenciais == true){
+                        emailUser = emailAux;
                         Intent intent = new Intent(getApplicationContext(),quizHomeActivity.class);
                         startActivity(intent );
                     }
