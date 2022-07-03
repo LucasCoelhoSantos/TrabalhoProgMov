@@ -5,14 +5,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class quizHomeActivity extends AppCompatActivity {
-    ImageButton btnQuiz1,btnQuiz2;
+public class QuizHomeActivity extends AppCompatActivity {
+    ImageButton btnQuiz1, btnQuiz2;
     FloatingActionButton btnPerfil;
+
+    protected static int quizInt;
+
+    public static int GetQuizInt() {
+        return quizInt;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,8 +32,8 @@ public class quizHomeActivity extends AppCompatActivity {
         btnPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),PerfilActivity.class);
-                startActivity(intent );
+                Intent intent = new Intent(getApplicationContext(), PerfilActivity.class);
+                startActivity(intent);
             }
         });
         btnQuiz1.setOnClickListener(new View.OnClickListener() {
@@ -47,5 +53,22 @@ public class quizHomeActivity extends AppCompatActivity {
 
 
 
+        btnQuiz1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                quizInt = 1;
+                Intent intent = new Intent(getApplicationContext(), TelaQuizActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnQuiz2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                quizInt = 2;
+                Intent intent = new Intent(getApplicationContext(), TelaQuizActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

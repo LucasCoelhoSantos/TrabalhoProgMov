@@ -11,7 +11,27 @@
     <string name="login_failed">"Login failed"</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Tela de Login e Registro -->
+    <string name="login">Login:</string>
+    <string name="preencher_dados">Preencha com seus dados:</string>
+    <string name="campo_email">Email</string>
+    <string name="campo_senha">Senha</string>
+    <string name="campo_confirmar_senha">Confirmar senha</string>
+    <string name="botao_entrar">Entrar</string>
+    <string name="criar_conta">Ainda não tem uma conta?</string>
+    <string name="botao_registrar">Registrar</string>
+
+    <!-- Tela de Perfil -->
+    <string name="nome_usuario">Nome:</string>
+    <string name="email_usuario">Email:</string>
+    <string name="alterar_conta">Salvar</string>
+    <string name="sair_conta">Sair</string>
+    <string name="excluir_conta">Excluir conta</string>
+
+    <!-- Tela de Quizz -->
     <string name="title_activity_tela_quiz">TelaQuiz</string>
+
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
@@ -22,32 +42,59 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
     <string-array name="array_quiz1">
-        <item>pergunta 1</item>
-        <item>opcao 1</item>
-        <item>opcao 2</item>
-        <item>opcao 3</item>
-        <item>opcao 4</item>
-        <item>pergunta 2</item>
-        <item>opcao 5</item>
-        <item>opcao 6</item>
-        <item>opcao 7</item>
-        <item>opcao 8</item>
-        <item>pergunta 3</item>
-        <item>opcao 9</item>
-        <item>opcao 10</item>
-        <item>opcao 11</item>
-        <item>opcao 12</item>
-        <item>pergunta 4</item>
-        <item>opcao 13</item>
-        <item>opcao 14</item>
-        <item>opcao 15</item>
-        <item>opcao 16</item>
-        <item>pergunta 5</item>
-        <item>opcao 17</item>
-        <item>opcao 18</item>
-        <item>opcao 19</item>
-        <item>opcao 20</item>
+        <item>Você costuma ter facilidade em fazer novas amizades?</item>
+        <item>Sempre</item>
+        <item>De vez em quando</item>
+        <item>Raramente</item>
+        <item>Nunca</item>
+        <item>Qual dessas é uma das suas principais qualidades?</item>
+        <item>Paciência</item>
+        <item>Inteligência</item>
+        <item>Coragem</item>
+        <item>Companherismo</item>
+        <item>Você se considera uma pessoa da:</item>
+        <item>Manhã</item>
+        <item>Tarde</item>
+        <item>Noite</item>
+        <item>Madrugada</item>
+        <item>Qual dos continentes você tem vontade de conhecer?</item>
+        <item>América</item>
+        <item>Ásia</item>
+        <item>África</item>
+        <item>Europa</item>
+        <item>Qual a sua altura?</item>
+        <item>1,50 - 1,60</item>
+        <item>1,61 - 1,70</item>
+        <item>1,71 - 1,80</item>
+        <item>1,81+</item>
+    </string-array>
 
+    <string-array name="array_quiz2">
+        <item>Você desce do avião da SHIELD, em plena Times Square destruída. O vilão está a cinco quarteirões de distância de você, e começa a te encarar, o que você faz?</item>
+        <item>Pega uma metralhadora e começa a atirar dali mesmo</item>
+        <item>Encara ele e corre em direção ao combate</item>
+        <item>Voa até lá para dar uma surra nele</item>
+        <item>Liga uma música em quanto vai ao combate</item>
+        <item>Qual dessas é uma das suas principais qualidades?</item>
+        <item>Forte</item>
+        <item>Inteligência</item>
+        <item>Coragem</item>
+        <item>Extrovertido</item>
+        <item>Quais os poderes que você gostaria ter?</item>
+        <item>Aterar a realidade</item>
+        <item>super Força</item>
+        <item>Inteligência extrema</item>
+        <item>Magia</item>
+        <item>O que você mais gosta de fazer?</item>
+        <item>Praticar Exercícios</item>
+        <item>Estudar</item>
+        <item>Videogame</item>
+        <item>Passar o temop com a família</item>
+        <item>Quando sente raiva o que faz?</item>
+        <item>Respira e se acalma</item>
+        <item>Explode</item>
+        <item>Disfarça a raiva</item>
+        <item>Se vinga mais tarde</item>
     </string-array>
 
 </resources>
