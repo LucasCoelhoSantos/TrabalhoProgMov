@@ -32,13 +32,10 @@ public class PerfilActivity extends AppCompatActivity {
         fotoPerfil = findViewById(R.id.fotoPerfil);
         btnCamera = findViewById(R.id.btnCamera);
 
-<<<<<<< HEAD
 
-        //Tá com bug, acho que não tá retornando, o valor booleano está dizendo que sempre tem imagem.
-=======
         /*
         Tá com bug, acho que não tá retornando, o valor booleano está dizendo que sempre tem imagem.
->>>>>>> c9291865de4f08f0cb5298347682666c88057547
+
         String emailUser = MainActivity.getEmailUser();
         Boolean teste2 =myDB.checarFoto(emailUser);
         if (teste2) {
@@ -51,11 +48,8 @@ public class PerfilActivity extends AppCompatActivity {
             Toast.makeText(PerfilActivity.this," Não Tem imagem",Toast.LENGTH_SHORT).show();
 
         }
-<<<<<<< HEAD
 
-=======
          */
->>>>>>> c9291865de4f08f0cb5298347682666c88057547
         btnCamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -82,11 +76,10 @@ public class PerfilActivity extends AppCompatActivity {
 
                 String emailUser = MainActivity.getEmailUser();
                 //Precisa especificar o email do cara, para poder salvar na linha dele.Não sei onde tá salvando.
-<<<<<<< HEAD
+
                 String teste= myDB.salvarFoto(fotoEmString,emailUser);
                 Toast.makeText(PerfilActivity.this,teste,Toast.LENGTH_SHORT).show();
 
-=======
                 /*
                 Boolean teste = myDB.salvarFoto(fotoEmString);
                     if (teste){
@@ -96,7 +89,6 @@ public class PerfilActivity extends AppCompatActivity {
 
                     }
                 */
->>>>>>> c9291865de4f08f0cb5298347682666c88057547
 
             }catch (Exception e){
             }

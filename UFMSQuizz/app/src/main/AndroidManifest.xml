@@ -14,9 +14,7 @@
         android:theme="@style/Theme.UFMSQuizz"
         tools:targetApi="31">
         <activity
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
+
             android:name=".TelaVitoriaActivity"
             android:exported="false" />
         <activity
@@ -26,12 +24,6 @@
             android:name=".PerfilActivity"
             android:exported="false" />
         <activity
->>>>>>> Stashed changes
-=======
-            android:name=".PerfilActivity"
-            android:exported="false" />
-        <activity
->>>>>>> c9291865de4f08f0cb5298347682666c88057547
             android:name=".quizHomeActivity"
             android:exported="false" />
         <activity

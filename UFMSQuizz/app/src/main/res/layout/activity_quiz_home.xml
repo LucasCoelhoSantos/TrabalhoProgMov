@@ -72,16 +72,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/btnQuiz1"
                 tools:layout_editor_absoluteX="93dp"
-<<<<<<< Updated upstream
-                tools:srcCompat="@tools:sample/backgrounds/scenic" />
-<<<<<<< HEAD
-=======
                 tools:srcCompat="drawable-v24/imagem_inicial_quiz_marvel.png" />
 
->>>>>>> Stashed changes
-=======
-
->>>>>>> c9291865de4f08f0cb5298347682666c88057547
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
