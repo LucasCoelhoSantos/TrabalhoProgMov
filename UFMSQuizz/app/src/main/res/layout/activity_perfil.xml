@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e4ebf0"
     tools:context=".PerfilActivity">
 
     <ImageView
         android:id="@+id/fotoPerfil"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="60dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -20,69 +21,21 @@
         android:id="@+id/btnCamera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="440dp"
         android:clickable="true"
-        android:onClick="tirarFoto"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fotoPerfil"
         app:srcCompat="@android:drawable/ic_menu_camera" />
 
-    <EditText
-        android:id="@+id/edtNome"
+    <TextView
+        android:id="@+id/Email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:hint="@string/nome_usuario"
-        app:layout_constraintBottom_toTopOf="@+id/edtEmail"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/edtEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:hint="@string/email_usuario"
-        app:layout_constraintBottom_toTopOf="@+id/btnSairConta"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnSairConta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="start"
-        android:layout_marginBottom="20dp"
-        android:enabled="true"
-        android:text="@string/sair_conta"
-        app:layout_constraintBottom_toTopOf="@+id/btnSalvarConta"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnSalvarConta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="start"
-        android:layout_marginBottom="20dp"
-        android:enabled="true"
-        android:text="@string/alterar_conta"
-        app:layout_constraintBottom_toTopOf="@+id/btnExcluirConta"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnExcluirConta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="start"
-        android:layout_marginBottom="60dp"
-        android:enabled="true"
-        android:text="@string/excluir_conta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="E-mail:"
+        android:textColor="#4180ab"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCamera" />
 </androidx.constraintlayout.widget.ConstraintLayout>

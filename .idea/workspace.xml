@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97602e0b-d2c4-44fd-ab8c-24561f6dc69e" name="Changes" comment="" />
+    <list default="true" id="f501a370-0b9d-4b84-abf6-100cb42e7f65" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="2" />
   </component>
-  <component name="ProjectId" id="2BPbr7FU9Ap8Zd7GekoVAcR6TB2" />
+  <component name="ProjectId" id="2BPZzeaXoH4NSbyJNzqiTT59cGw" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -23,17 +31,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/UFMSQuizz" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/GIT/TrabalhoProgMov" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="97602e0b-d2c4-44fd-ab8c-24561f6dc69e" name="Changes" comment="" />
-      <created>1656810862972</created>
+      <changelist id="f501a370-0b9d-4b84-abf6-100cb42e7f65" name="Changes" comment="" />
+      <created>1656809945117</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1656810862972</updated>
+      <updated>1656809945117</updated>
     </task>
     <servers />
   </component>

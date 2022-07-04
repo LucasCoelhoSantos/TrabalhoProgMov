@@ -4,36 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TelaQuizActivity">
+    android:background="#e4ebf0"
+    tools:context=".TelaQuiz">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="228dp"
-        android:layout_height="251dp"
-        android:layout_marginStart="91dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="92dp"
+        android:id="@+id/imgPergunta"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
-    <TextView
-        android:id="@+id/txtPergunta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="41dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
     <RadioGroup
         android:id="@+id/radioGroupQuestoes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtPergunta">
 
@@ -62,13 +51,24 @@
             android:text="RadioButton" />
     </RadioGroup>
 
+    <TextView
+        android:id="@+id/txtPergunta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPergunta" />
+
     <Button
         android:id="@+id/btnProximaQuestao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#4180AB"
         android:text="Próximo"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupQuestoes" />
 </androidx.constraintlayout.widget.ConstraintLayout>

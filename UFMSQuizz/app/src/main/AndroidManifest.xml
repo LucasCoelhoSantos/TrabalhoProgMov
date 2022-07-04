@@ -3,11 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.ufmsquizz">
 
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-feature android:name="android.hardware.Camera" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -19,19 +14,20 @@
         android:theme="@style/Theme.UFMSQuizz"
         tools:targetApi="31">
         <activity
+
             android:name=".TelaVitoriaActivity"
             android:exported="false" />
         <activity
-            android:name=".TelaQuizActivity"
+            android:name=".TelaQuiz"
             android:exported="false" />
         <activity
             android:name=".PerfilActivity"
             android:exported="false" />
         <activity
-            android:name=".QuizHomeActivity"
+            android:name=".quizHomeActivity"
             android:exported="false" />
         <activity
-            android:name=".CadastroActivity"
+            android:name=".RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -42,7 +38,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
