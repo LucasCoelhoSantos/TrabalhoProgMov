@@ -40,14 +40,13 @@ public class quizHomeActivity extends AppCompatActivity {
         byte[] fotoEmBytes;
         String userLogado = MainActivity.getUserLogado();
 
-<<<<<<< Updated upstream
+
         btnQuiz1 = (ImageButton)findViewById(R.id.btnQuiz1);
         btnQuiz2 = (ImageButton)findViewById(R.id.btnQuiz2);
         btnPerfil = (FloatingActionButton)findViewById(R.id.btnPerfil);
-=======
+
 
         String fotoEmString = myDB.retornarFotoPerfil(userLogado);
->>>>>>> Stashed changes
 
         Toast.makeText(quizHomeActivity.this, fotoEmString, Toast.LENGTH_SHORT).show();
         fotoEmBytes = Base64.decode(fotoEmString,Base64.DEFAULT);
@@ -63,8 +62,7 @@ public class quizHomeActivity extends AppCompatActivity {
                 startActivity(intent );
             }
         });
-<<<<<<< Updated upstream
-=======
+
         btnQuiz1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -81,9 +79,6 @@ public class quizHomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
->>>>>>> Stashed changes
 
     }
 }
