@@ -4,17 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e4ebf0"
     tools:context=".TelaVitoriaActivity">
 
     <ImageView
         android:id="@+id/imgVitoria"
         android:layout_width="309dp"
         android:layout_height="310dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="51dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
@@ -23,9 +21,11 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="20dp"
         android:text="Parabéns você é o :"
+        android:textColor="#4180AB"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgVitoria" />
 
@@ -33,19 +33,25 @@
         android:id="@+id/txtNomeFinal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="49dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
         android:text="nome final"
+        android:textColor="#4180AB"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/imgVitoria" />
 
     <TextView
         android:id="@+id/txtDescricaoFinal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="304dp"
+        android:layout_height="80dp"
         android:layout_marginStart="53dp"
-        android:layout_marginTop="49dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="53dp"
         android:text="TextView"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
@@ -53,19 +59,21 @@
         android:id="@+id/btnOutroQuiz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="38dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#4180AB"
         android:text="Outro Quiz"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescricaoFinal" />
 
     <Button
         android:id="@+id/btnSalvarResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#4180AB"
         android:text="Salvar Resultado"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnOutroQuiz" />
+        app:layout_constraintStart_toEndOf="@+id/btnOutroQuiz"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescricaoFinal" />
 </androidx.constraintlayout.widget.ConstraintLayout>

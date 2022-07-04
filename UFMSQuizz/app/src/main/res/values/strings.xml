@@ -43,58 +43,79 @@
 
     <string-array name="array_quiz1">
         <item>Você costuma ter facilidade em fazer novas amizades?</item>
+
         <item>Sempre</item>
         <item>De vez em quando</item>
         <item>Raramente</item>
         <item>Nunca</item>
+
         <item>Qual dessas é uma das suas principais qualidades?</item>
-        <item>Paciência</item>
-        <item>Inteligência</item>
-        <item>Coragem</item>
+
         <item>Companherismo</item>
+        <item>Inteligência</item>
+        <item>Paciência</item>
+        <item>Coragem</item>
+
         <item>Você se considera uma pessoa da:</item>
-        <item>Manhã</item>
-        <item>Tarde</item>
-        <item>Noite</item>
+
         <item>Madrugada</item>
+        <item>Manhã</item>
+        <item>Noite</item>
+        <item>Tarde</item>
+
         <item>Qual dos continentes você tem vontade de conhecer?</item>
+
         <item>América</item>
-        <item>Ásia</item>
-        <item>África</item>
         <item>Europa</item>
+        <item>África</item>
+        <item>Ásia</item>
+
         <item>Qual a sua altura?</item>
-        <item>1,50 - 1,60</item>
-        <item>1,61 - 1,70</item>
+
         <item>1,71 - 1,80</item>
         <item>1,81+</item>
+        <item>1,61 - 1,70</item>
+        <item>1,50 - 1,60</item>
+
     </string-array>
 
     <string-array name="array_quiz2">
-        <item>Você desce do avião da SHIELD, em plena Times Square destruída. O vilão está a cinco quarteirões de distância de você, e começa a te encarar, o que você faz?</item>
+        <item>Você desce do avião da SHIELD, em plena Times Square destruída.
+            O vilão está a cinco quarteirões de distância de você, e começa a te encarar, o que você faz?</item>
+
         <item>Pega uma metralhadora e começa a atirar dali mesmo</item>
         <item>Encara ele e corre em direção ao combate</item>
         <item>Voa até lá para dar uma surra nele</item>
-        <item>Liga uma música em quanto vai ao combate</item>
+        <item>Se teletransporta para trás dele e o derrota</item>
+
         <item>Qual dessas é uma das suas principais qualidades?</item>
-        <item>Forte</item>
-        <item>Inteligência</item>
+
+        <item>Força</item>
         <item>Coragem</item>
-        <item>Extrovertido</item>
+        <item>Inteligência</item>
+        <item>Determinação</item>
+
         <item>Quais os poderes que você gostaria ter?</item>
-        <item>Aterar a realidade</item>
-        <item>super Força</item>
+
+        <item>Super Força</item>
+        <item>Resistência sobre-humana</item>
         <item>Inteligência extrema</item>
         <item>Magia</item>
-        <item>O que você mais gosta de fazer?</item>
-        <item>Praticar Exercícios</item>
+
+        <item>O que você mais gosta de fazer no seu tempo livre?</item>
+
         <item>Estudar</item>
+        <item>Praticar Exercícios</item>
         <item>Videogame</item>
-        <item>Passar o temop com a família</item>
+        <item>Passar um tempo com a família</item>
+
         <item>Quando sente raiva o que faz?</item>
-        <item>Respira e se acalma</item>
+
         <item>Explode</item>
-        <item>Disfarça a raiva</item>
+        <item>Respira e se acalma</item>
         <item>Se vinga mais tarde</item>
+        <item>Disfarça a raiva</item>
+
     </string-array>
 
 </resources>
