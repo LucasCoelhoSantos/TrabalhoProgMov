@@ -34,12 +34,15 @@ public class RegisterActivity extends AppCompatActivity {
     String fotoPerfil = "";
     static String fotoLogada;
 
+<<<<<<< Updated upstream
     public static String getFotoLogada() {
         return fotoLogada;
     }
 
 
 
+=======
+>>>>>>> Stashed changes
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,10 +63,13 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View view)  {
 
+<<<<<<< Updated upstream
 
 
                    // MessageDigest md = MessageDigest.getInstance("SHA-256");
 
+=======
+>>>>>>> Stashed changes
                 String email = emailReg.getText().toString();
                 String senha = senhaReg.getText().toString();
                 String senhaConfirmada = confirmarSenhaReg.getText().toString();
@@ -71,16 +77,35 @@ public class RegisterActivity extends AppCompatActivity {
                 if(email.equals("") || senha.equals("") || senhaConfirmada.equals("")|| fotoPerfil.equals("")){
                     Toast.makeText(RegisterActivity.this,"Preencha todos os campos.",Toast.LENGTH_SHORT).show();
                 }
+<<<<<<< Updated upstream
                 else{
+=======
+                else if (senha.length() < 8 || senhaConfirmada.length() < 8) {
+                    Toast.makeText(RegisterActivity.this, "Senha deve possuir no mínimo 8 digitos!", Toast.LENGTH_SHORT).show();
+                }
+                else if (senha.length() >= 32 || senhaConfirmada.length() > 32) {
+                    Toast.makeText(RegisterActivity.this, "Limite de digitos ultrapassado!", Toast.LENGTH_SHORT).show();
+                }
+                else{
+
+>>>>>>> Stashed changes
                     if(senha.equals(senhaConfirmada)){
                         Boolean validarExistencia = myDB.checkUser(email);
 
                         if (!validarExistencia){
                             Boolean Sucesso = myDB.insertData(email,senha,fotoPerfil);
+<<<<<<< Updated upstream
                             fotoLogada=fotoPerfil;
 
                             if (Sucesso){
                                 Toast.makeText(RegisterActivity.this,"Registrado com sucesso!.",Toast.LENGTH_SHORT).show();
+=======
+
+                            if (Sucesso){
+                                Toast.makeText(RegisterActivity.this,"Registrado com sucesso!.",Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                                startActivity(intent );
+>>>>>>> Stashed changes
                             }
                             else{
                                 Toast.makeText(RegisterActivity.this,"Registro falhou!.",Toast.LENGTH_SHORT).show();

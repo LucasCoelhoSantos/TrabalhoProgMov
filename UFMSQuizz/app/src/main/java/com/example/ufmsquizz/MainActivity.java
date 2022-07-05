@@ -1,6 +1,11 @@
 package com.example.ufmsquizz;
 
 import androidx.appcompat.app.AppCompatActivity;
+<<<<<<< Updated upstream
+=======
+
+import android.graphics.Bitmap;
+>>>>>>> Stashed changes
 import android.security.keystore.*;
 import android.content.Intent;
 import android.os.Bundle;
@@ -74,5 +79,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent );
             }
         });
+
+
+
     }
 }

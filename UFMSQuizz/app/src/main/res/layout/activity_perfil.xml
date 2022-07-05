@@ -22,14 +22,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
+<<<<<<< Updated upstream
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
+=======
+        app:layout_constraintEnd_toEndOf="@+id/fotoPerfil"
+        app:layout_constraintStart_toStartOf="@+id/fotoPerfil"
+>>>>>>> Stashed changes
         app:layout_constraintTop_toBottomOf="@+id/fotoPerfil"
         app:srcCompat="@android:drawable/ic_menu_camera" />
 
     <TextView
         android:id="@+id/Email"
+<<<<<<< Updated upstream
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -38,4 +44,100 @@
         android:textColor="#4180ab"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCamera" />
+=======
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="21dp"
+        android:text="E-mail:"
+        android:textColor="#4180ab"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edtEmailPerfil"
+        app:layout_constraintEnd_toStartOf="@+id/edtEmailPerfil"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtEmailPerfil"
+        android:layout_width="150dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="104dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Email"
+        app:layout_constraintTop_toBottomOf="@+id/btnCamera" />
+
+    <Button
+        android:id="@+id/btnSalvarPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginBottom="85dp"
+        android:text="Salvar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnExcluirConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="37dp"
+        android:text="Excluir conta"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSalvarPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnSalvarPerfil" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="68dp"
+        android:text="Seus Resultados:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email" />
+
+    <TextView
+        android:id="@+id/txtResultQuizVingadores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="28dp"
+        android:text="Quiz vingadores:"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="17dp"
+        android:text="Quiz cachorros:"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/txtResultQuizCachorro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintStart_toStartOf="@+id/txtResultQuizVingadores"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultQuizVingadores" />
+
+>>>>>>> Stashed changes
 </androidx.constraintlayout.widget.ConstraintLayout>
