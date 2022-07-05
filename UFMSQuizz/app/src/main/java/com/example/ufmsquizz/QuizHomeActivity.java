@@ -36,31 +36,19 @@ public class quizHomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_home);
         myDB = new DBHelper(this);
-<<<<<<< Updated upstream
-=======
-
-        byte[] fotoEmBytes;
-        String userLogado = MainActivity.getUserLogado();
->>>>>>> Stashed changes
 
         byte[] fotoEmBytes;
         String userLogado = MainActivity.getUserLogado();
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
         btnQuiz1 = (ImageButton)findViewById(R.id.btnQuiz1);
         btnQuiz2 = (ImageButton)findViewById(R.id.btnQuiz2);
         btnPerfil = (FloatingActionButton)findViewById(R.id.btnPerfil);
-=======
+
 
         String fotoEmString = myDB.retornarFotoPerfil(userLogado);
->>>>>>> Stashed changes
 
         Toast.makeText(quizHomeActivity.this, fotoEmString, Toast.LENGTH_SHORT).show();
-=======
-        String fotoEmString = myDB.retornarFotoPerfil(userLogado);
-
->>>>>>> Stashed changes
         fotoEmBytes = Base64.decode(fotoEmString,Base64.DEFAULT);
         Bitmap imagemDecodificada = BitmapFactory.decodeByteArray(fotoEmBytes,0,fotoEmBytes.length);
         btnQuiz1 = (ImageView)findViewById(R.id.btnQuiz1);
@@ -74,8 +62,7 @@ public class quizHomeActivity extends AppCompatActivity {
                 startActivity(intent );
             }
         });
-<<<<<<< Updated upstream
-=======
+
         btnQuiz1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -92,9 +79,6 @@ public class quizHomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
->>>>>>> Stashed changes
 
     }
 }
