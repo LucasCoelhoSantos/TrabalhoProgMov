@@ -9,9 +9,19 @@
 
     <ImageView
         android:id="@+id/imgVitoria"
+<<<<<<< Updated upstream
         android:layout_width="309dp"
         android:layout_height="310dp"
         android:layout_marginTop="20dp"
+=======
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+>>>>>>> Stashed changes
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -21,6 +31,7 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< Updated upstream
         android:layout_marginStart="53dp"
         android:layout_marginTop="20dp"
         android:text="Parabéns você é o :"
@@ -28,21 +39,38 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgVitoria" />
+=======
+        android:layout_marginStart="2dp"
+        android:text="Parabéns você é o :"
+        android:textColor="#4180AB"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtNomeFinal"
+        app:layout_constraintStart_toStartOf="@+id/imgVitoria" />
+>>>>>>> Stashed changes
 
     <TextView
         android:id="@+id/txtNomeFinal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
+<<<<<<< Updated upstream
         android:layout_marginTop="20dp"
         android:text="nome final"
         android:textColor="#4180AB"
         android:textStyle="bold"
+=======
+        android:text="nome final"
+        android:textAlignment="center"
+        android:textColor="#4180AB"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+>>>>>>> Stashed changes
         app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/imgVitoria" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtDescricaoFinal"
+<<<<<<< Updated upstream
         android:layout_width="304dp"
         android:layout_height="80dp"
         android:layout_marginStart="53dp"
@@ -51,6 +79,18 @@
         android:text="TextView"
         android:textAlignment="textStart"
         android:textColor="#000000"
+=======
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="40dp"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/btnSalvarResultado"
+>>>>>>> Stashed changes
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
@@ -59,21 +99,40 @@
         android:id="@+id/btnOutroQuiz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< Updated upstream
         android:layout_marginStart="40dp"
         android:layout_marginTop="40dp"
         android:backgroundTint="#4180AB"
         android:text="Outro Quiz"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtDescricaoFinal" />
+=======
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="163dp"
+        android:backgroundTint="#4180AB"
+        android:text="Outro Quiz"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSalvarResultado"
+        app:layout_constraintStart_toStartOf="parent" />
+>>>>>>> Stashed changes
 
     <Button
         android:id="@+id/btnSalvarResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< Updated upstream
         android:layout_marginStart="30dp"
         android:layout_marginTop="40dp"
         android:backgroundTint="#4180AB"
         android:text="Salvar Resultado"
         app:layout_constraintStart_toEndOf="@+id/btnOutroQuiz"
         app:layout_constraintTop_toBottomOf="@+id/txtDescricaoFinal" />
+=======
+        android:layout_marginEnd="3dp"
+        android:backgroundTint="#4180AB"
+        android:text="Salvar Resultado"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnOutroQuiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnOutroQuiz" />
+>>>>>>> Stashed changes
 </androidx.constraintlayout.widget.ConstraintLayout>

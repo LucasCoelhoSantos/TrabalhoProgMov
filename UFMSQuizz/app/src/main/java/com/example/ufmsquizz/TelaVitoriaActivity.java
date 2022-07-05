@@ -4,6 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.res.Resources;
+<<<<<<< Updated upstream
+=======
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+>>>>>>> Stashed changes
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -93,7 +98,7 @@ public class TelaVitoriaActivity extends AppCompatActivity {
         btnSalvarResultado.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Toast.makeText(TelaVitoriaActivity.this, "Resultado salvo no perfil", Toast.LENGTH_SHORT).show();
             }
         });
     }

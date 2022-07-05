@@ -24,6 +24,7 @@ public class DBHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase myDB, int i, int i1)
     {
         myDB.execSQL("drop table if exists users");
+<<<<<<< Updated upstream
 
     }
 
@@ -41,6 +42,44 @@ public class DBHelper extends SQLiteOpenHelper {
         else{
             return true;
         }
+=======
+
+    }
+
+    public Boolean insertData(String email, String senha, String fotoPerfil){
+        SQLiteDatabase myDB = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("email",email);
+        contentValues.put("senha",criptografia(senha));
+        contentValues.put("fotoPerfil",fotoPerfil);
+
+        long result = myDB.insert("users",null,contentValues);
+        if(result==-1){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+    public long deleteData(String email) {
+        long returnDB;
+        SQLiteDatabase myDB = this.getWritableDatabase();
+        String[] args = {String.valueOf(email)};
+        returnDB = myDB.delete("users", "email =?", args);
+        return returnDB;
+    }
+
+    public long updateData(String email) {
+        long returnDB;
+        SQLiteDatabase myDB = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put("email", email);
+        //values.put("fotoPerfil", fotoPerfil);
+        String[] args = {String.valueOf(email)};
+        returnDB = myDB.update("users", values, "email =?", args);
+        myDB.close();
+        return returnDB;
+>>>>>>> Stashed changes
     }
 
     public Boolean checarFoto(String email){
